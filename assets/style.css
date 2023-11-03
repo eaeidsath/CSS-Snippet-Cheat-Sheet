@@ -1,7 +1,53 @@
+body {
+    background-color: #457B9D;
+    color: #F0A6CA;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .card {
-    border-style: dashed solid purple;
-    border-width: 1px;
-    border-radius: 50px;
+    border-style: dashed;
+    border-color: #A8DADC;
+    border-width: 3px;
+    height: 300px;
+    width: 400px;
     padding: 10px;
     margin: 20px;
+}
+
+h2 {
+    border: solid #A8DADC;
+    border-radius: 5px;
+    font-size: 175%;
+    background-color: #457B9D;
+    position: relative;
+    margin-top: -20px;
+}
+
+.code p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 5px;
+}
+
+.code {
+    border-radius: 10px;
+    background-image: linear-gradient(#1D3557, #4880cd);
 }
