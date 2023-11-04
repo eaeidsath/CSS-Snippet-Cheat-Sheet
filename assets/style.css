@@ -1,6 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #457B9D;
-    color: #F0A6CA;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -14,40 +23,65 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2%;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
     border-style: dashed;
     border-color: #A8DADC;
     border-width: 3px;
-    height: 300px;
-    width: 400px;
     padding: 10px;
     margin: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
 h2 {
     border: solid #A8DADC;
     border-radius: 5px;
-    font-size: 175%;
+    font-size: 200%;
+    text-align: center;
     background-color: #457B9D;
     position: relative;
     margin-top: -20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.card p {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .code p {
+    display: block;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     margin-left: 5px;
+    user-select: all;
+}
+
+span {
+    padding-left: 1.5em;
+    text-indent:-1.5em;
 }
 
 .code {
     border-radius: 10px;
     background-image: linear-gradient(#1D3557, #4880cd);
 }
+
+.card:hover,
+.card:hover h2 {
+    box-shadow: inset 0px 0px 8px #6412e7, 0 0 15px #6412e7;
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+  }
